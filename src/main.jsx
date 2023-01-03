@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import App from './App';
 import { ThemeContextProvider } from './context/ThemeContext';
+import GlobalStyle from './GlobalStyle';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
@@ -13,6 +14,7 @@ import Proyects from './pages/Proyects';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeContextProvider>
+      <GlobalStyle />
       <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<App />}>

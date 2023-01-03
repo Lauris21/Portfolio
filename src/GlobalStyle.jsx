@@ -156,6 +156,10 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5rem;
   }
 
+  a {
+    color: inherit;
+  }
+
   a, button {
     cursor: pointer;
   }

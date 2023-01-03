@@ -1,3 +1,4 @@
+import React from 'react';
 import { createContext, useCallback, useEffect, useState } from 'react';
 
 export const ThemeContext = createContext({

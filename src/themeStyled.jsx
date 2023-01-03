@@ -1,4 +1,4 @@
-const theme = {
+const themeStyled = {
   dark: {
     primary: '#c8c7c6',
     secondary: '#dab33c',
@@ -13,4 +13,4 @@ const theme = {
   },
 };
 
-export default theme;
+export default themeStyled;
