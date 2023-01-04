@@ -6,10 +6,11 @@ import { ThemeContext } from '../context/ThemeContext';
 import themeStyled from '../themeStyled';
 
 const ButtonStyled = styled.button`
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 9px;
   margin: auto;
+  font-size: 1.75rem;
   ${(props) => {
     const { background, border } = props;
     return css`
@@ -27,7 +28,7 @@ const Switcher = () => {
       background={
         theme === 'dark' ? themeStyled.dark.background : themeStyled.light.background
       }
-      border={theme === 'dark' ? themeStyled.dark.tertiary : themeStyled.light.tertiary}
+      border="1px solid #ffdc2b"
       onClick={toggleTheme}
     >
       {theme === 'dark' ? '🌞' : '🌝'}

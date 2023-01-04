@@ -1,12 +1,12 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-export const StyledNav = styled.nav`
+export const StyledTabBar = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 2rem 5rem;
-  height: 20vh;
+  height: 15vh;
+  align-items: center;
   ${(props) => {
     const {
       backgr,
@@ -19,7 +19,6 @@ export const StyledNav = styled.nav`
       justify,
       border,
       borderradius,
-      align,
       borderbottom,
       gap,
     } = props;
@@ -34,13 +33,12 @@ export const StyledNav = styled.nav`
       justify-content: ${justify};
       border-radius: ${borderradius};
       border: ${border};
-      align-items: ${align};
       border-bottom: ${borderbottom};
       gap: ${gap};
     `;
   }}
 `;
 
-export const Nav = (props) => {
-  return <StyledNav {...props}></StyledNav>;
+export const TabBar = (props) => {
+  return <StyledTabBar {...props}></StyledTabBar>;
 };

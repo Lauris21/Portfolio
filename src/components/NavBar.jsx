@@ -9,6 +9,7 @@ import { Img } from './ui-components/StyledImg';
 import { Li } from './ui-components/StyledLi';
 import { Nav } from './ui-components/StyledNav';
 import { Ul } from './ui-components/StyledUl';
+
 const NavBar = () => {
   const { theme } = useContext(ThemeContext);
 
@@ -21,8 +22,8 @@ const NavBar = () => {
       <Img
         src="../../public/logoLauraSanchez.png"
         alt="logo Laura Sanchez"
-        width="2.75rem"
-        height="2.75rem"
+        width="3rem"
+        height="3rem"
         margin="auto"
         borderRadius="50px"
       />

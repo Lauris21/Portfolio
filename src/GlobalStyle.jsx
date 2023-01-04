@@ -163,8 +163,13 @@ const GlobalStyle = createGlobalStyle`
   a, button {
     cursor: pointer;
   }
-  a:link, a:visited, a:active {
+  a:link, a:visited {
     text-decoration:none;
+}
+
+a:active, a:focus {
+  color: #ffdc2b;
+  border-bottom: 1px solid #ffdc2b;
 }
 `;
 

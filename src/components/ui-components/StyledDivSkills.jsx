@@ -5,64 +5,63 @@ import styled, { css } from 'styled-components';
 import { ThemeContext } from '../../context/ThemeContext';
 import themeStyled from '../../themeStyled';
 
-const StyledDiv = styled.div`
+const StyledDivSkills = styled.div`
   box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
+  width: 7rem;
 
   ${(props) => {
     const {
       backgr,
       fontcolor,
       fontsize,
-      display,
       flexwrap,
-      flexdir,
       objectfit,
       width,
       height,
       justify,
       border,
-      borderradius,
-      padding,
       margin,
       marginTop,
-      align,
       borderbottom,
-      gap,
+      hover,
     } = props;
     return css`
       background-color: ${backgr};
       color: ${fontcolor};
       font-size: ${fontsize};
-      display: ${display};
       flex-wrap: ${flexwrap};
-      flex-direction: ${flexdir};
       object-fit: ${objectfit};
       width: ${width};
       height: ${height};
       justify-content: ${justify};
-      border-radius: ${borderradius};
       border: ${border};
-      padding: ${padding};
       margin: ${margin};
       margin-top: ${marginTop};
-      align-items: ${align};
       border-bottom: ${borderbottom};
-      gap: ${gap};
+      :hover: ${hover};
     `;
   }}
 `;
 
-const Div = (props) => {
+const DivSkills = (props) => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <StyledDiv
+    <StyledDivSkills
       backgr={
-        theme === 'dark' ? themeStyled.dark.background : themeStyled.light.background
+        theme === 'dark'
+          ? themeStyled.dark.backgroundSecond
+          : themeStyled.light.backgroundSecond
       }
       {...props}
-    ></StyledDiv>
+    ></StyledDivSkills>
   );
 };
 
-export default Div;
+export default DivSkills;
