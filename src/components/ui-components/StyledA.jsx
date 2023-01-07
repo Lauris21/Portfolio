@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const StyledAnchor = styled.a`
   font-family: 'Poppins';
@@ -8,6 +8,16 @@ const StyledAnchor = styled.a`
   :hover {
     border-bottom: 1px solid;
   }
+  ${(props) => {
+    const { color, fontSz, textAl, borderBt, width } = props;
+    return css`
+      color: ${color};
+      font-size: ${fontSz};
+      text-align: ${textAl};
+      border-bottom: ${borderBt};
+      width: ${width};
+    `;
+  }}
 `;
 
 const Anchor = ({ text }) => {

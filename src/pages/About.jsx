@@ -25,7 +25,7 @@ const About = () => {
       min-height="65vh"
     >
       <Div width="10rem" height="4px" backgr={themeStyled.dark.tertiary}></Div>
-      <Div padding="2rem" display="flex" flexdir="column" gap="1rem" width="60%">
+      <Div padding="2rem" display="flex" flexdir="column" gap="1rem" width="65%">
         <P>I am 30 years old, I love sports, nature and new challenges.</P>
         <P>
           I have always been an administrator, but last year I achieved several goals,
@@ -37,7 +37,7 @@ const About = () => {
         </P>
       </Div>
       <Div width="10rem" height="4px" backgr={themeStyled.dark.tertiary}></Div>
-      <Div padding="2.5rem" width="60%">
+      <Div padding="2rem" width="90%" maxW="900px">
         <P textAl="center" fontSz="2rem">
           My Skills
         </P>

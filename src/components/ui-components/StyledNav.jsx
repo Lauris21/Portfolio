@@ -5,8 +5,8 @@ export const StyledNav = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 2rem 5rem;
   height: 20vh;
+
   ${(props) => {
     const {
       backgr,

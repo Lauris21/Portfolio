@@ -7,10 +7,11 @@ import themeStyled from '../../themeStyled';
 
 const StyledBold = styled.p`
   ${(props) => {
-    const { color, fontSz } = props;
+    const { color, fontSz, textAl } = props;
     return css`
       color: ${color};
       font-size: ${fontSz};
+      text-align: ${textAl};
     `;
   }}
 `;

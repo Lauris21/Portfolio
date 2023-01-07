@@ -10,7 +10,7 @@ const ButtonStyled = styled.button`
   height: 3rem;
   border-radius: 9px;
   margin: auto;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   ${(props) => {
     const { background, border } = props;
     return css`

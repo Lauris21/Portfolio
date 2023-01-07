@@ -1,20 +1,19 @@
 import React from 'react';
+import { useContext } from 'react';
 import styled, { css } from 'styled-components';
 
-export const StyledUl = styled.ul`
+import { ThemeContext } from '../../context/ThemeContext';
+import themeStyled from '../../themeStyled';
+
+const StyledDivForm = styled.div`
   box-sizing: border-box;
-  display: flex;
-  justify-content: space-around;
-  min-width: 225px;
-  margin: auto;
-  flex-wrap: wrap;
-  gap: 1rem;
 
   ${(props) => {
     const {
       backgr,
       fontcolor,
       fontsize,
+      display,
       flexwrap,
       flexdir,
       objectfit,
@@ -25,6 +24,7 @@ export const StyledUl = styled.ul`
       borderradius,
       padding,
       margin,
+      marginTop,
       align,
       borderbottom,
       gap,
@@ -33,6 +33,7 @@ export const StyledUl = styled.ul`
       background-color: ${backgr};
       color: ${fontcolor};
       font-size: ${fontsize};
+      display: ${display};
       flex-wrap: ${flexwrap};
       flex-direction: ${flexdir};
       object-fit: ${objectfit};
@@ -43,6 +44,7 @@ export const StyledUl = styled.ul`
       border: ${border};
       padding: ${padding};
       margin: ${margin};
+      margin-top: ${marginTop};
       align-items: ${align};
       border-bottom: ${borderbottom};
       gap: ${gap};
@@ -50,6 +52,19 @@ export const StyledUl = styled.ul`
   }}
 `;
 
-export const Ul = (props) => {
-  return <StyledUl {...props}></StyledUl>;
+const DivForm = (props) => {
+  const { theme } = useContext(ThemeContext);
+
+  return (
+    <StyledDivForm
+      backgr={
+        theme === 'dark'
+          ? themeStyled.dark.background
+          : themeStyled.light.backgroundSecond
+      }
+      {...props}
+    ></StyledDivForm>
+  );
 };
+
+export default DivForm;

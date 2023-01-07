@@ -28,6 +28,8 @@ const StyledDiv = styled.div`
       align,
       borderbottom,
       gap,
+      minH,
+      maxW,
     } = props;
     return css`
       background-color: ${backgr};
@@ -38,6 +40,7 @@ const StyledDiv = styled.div`
       flex-direction: ${flexdir};
       object-fit: ${objectfit};
       width: ${width};
+      max-width: ${maxW};
       height: ${height};
       justify-content: ${justify};
       border-radius: ${borderradius};
@@ -48,6 +51,7 @@ const StyledDiv = styled.div`
       align-items: ${align};
       border-bottom: ${borderbottom};
       gap: ${gap};
+      min-height: ${minH};
     `;
   }}
 `;

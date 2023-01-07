@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import styled, { css } from 'styled-components';
 
 import { ThemeContext } from '../../context/ThemeContext';
+import { mobile } from '../../mediaStyled';
 import themeStyled from '../../themeStyled';
 
 const StyledDivSkills = styled.div`
@@ -14,7 +15,9 @@ const StyledDivSkills = styled.div`
   padding: 1.5rem;
   gap: 1rem;
   width: 7rem;
-
+  ${mobile} {
+    width: 6rem;
+  }
   ${(props) => {
     const {
       backgr,

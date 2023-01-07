@@ -1,8 +1,8 @@
 import React from 'react';
 import { useContext } from 'react';
 
-import linkedin from '../../public/linkedin-svgrepo-com.svg';
 import github from '../../public/github-svgrepo-com.svg';
+import linkedin from '../../public/linkedin-svgrepo-com.svg';
 import { ThemeContext } from '../context/ThemeContext';
 import themeStyled from '../themeStyled';
 import { Img } from './ui-components/StyledImg';

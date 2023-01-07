@@ -4,10 +4,11 @@ import Bold from '../components/ui-components/StyledBold';
 import Div from '../components/ui-components/StyledDiv';
 import { Img } from '../components/ui-components/StyledImg';
 import P from '../components/ui-components/StyledPharagraph';
+import DivHome from '../components/ui-components/StyledDivHome';
 
 const Home = () => {
   return (
-    <Div display="flex" flexdir="row" justify="center" margintop="2rem" height="65vh">
+    <DivHome display="flex" flexdir="row" justify="center" margintop="2rem" minH="65vh">
       <Div margin="auto 0">
         <Div display="flex" flexdir="column" gap="1rem" padding="1.25rem">
           <P fontSz="1.75rem">HELLO,</P>
@@ -21,14 +22,14 @@ const Home = () => {
           <P fontSz="1.75rem">FullStack Developer</P>
         </Div>
       </Div>
-      <Div padding="2rem" display="flex" align="center">
+      <Div padding="2rem" display="flex" align="center" justify="center">
         <Img
           src="../../public/LauraSanchez.png"
           alt="Laura Sánchez Image"
           width="22rem"
         />
       </Div>
-    </Div>
+    </DivHome>
   );
 };
 
