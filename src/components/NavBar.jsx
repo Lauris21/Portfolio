@@ -2,6 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import LogoLS from '../../public/logoLauraSanchez.png';
 import { ThemeContext } from '../context/ThemeContext';
 import themeStyled from '../themeStyled';
 import Switcher from './Switcher';
@@ -20,7 +21,7 @@ const NavBar = () => {
       }
     >
       <Img
-        src="../../public/logoLauraSanchez.png"
+        src={LogoLS}
         alt="logo Laura Sanchez"
         width="3rem"
         height="3rem"

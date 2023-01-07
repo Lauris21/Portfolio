@@ -1,10 +1,11 @@
 import React from 'react';
 
+import LauraSanchez from '../../public/LauraSanchez.png';
 import Bold from '../components/ui-components/StyledBold';
 import Div from '../components/ui-components/StyledDiv';
+import DivHome from '../components/ui-components/StyledDivHome';
 import { Img } from '../components/ui-components/StyledImg';
 import P from '../components/ui-components/StyledPharagraph';
-import DivHome from '../components/ui-components/StyledDivHome';
 
 const Home = () => {
   return (
@@ -23,11 +24,7 @@ const Home = () => {
         </Div>
       </Div>
       <Div padding="2rem" display="flex" align="center" justify="center">
-        <Img
-          src="../../public/LauraSanchez.png"
-          alt="Laura Sánchez Image"
-          width="22rem"
-        />
+        <Img src={LauraSanchez} alt="Laura Sánchez Image" width="22rem" />
       </Div>
     </DivHome>
   );
