@@ -70,7 +70,7 @@ const ProjectsBox = () => {
             gap="1.5rem"
           >
             <Bold textAl="center">{project.name}</Bold>
-            <ReactPlayer url={project.url} playing playsinline width="100%" />
+            <ReactPlayer url={project.url} playsinline width="100%" />
             <Div
               width="fit-content"
               borderbottom={`1px solid ${themeStyled.dark.tertiary}`}
