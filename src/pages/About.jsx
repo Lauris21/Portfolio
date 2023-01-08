@@ -17,13 +17,7 @@ import themeStyled from '../themeStyled';
 
 const About = () => {
   return (
-    <Div
-      display="flex"
-      flexdir="column"
-      align="center"
-      margintop="2rem"
-      min-height="65vh"
-    >
+    <Div display="flex" flexdir="column" align="center" margintop="2rem" minH="65vh">
       <Div width="10rem" height="4px" backgr={themeStyled.dark.tertiary}></Div>
       <Div padding="2rem" display="flex" flexdir="column" gap="1rem" width="65%">
         <P>I am 30 years old, I love sports, nature and new challenges.</P>
