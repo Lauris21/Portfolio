@@ -54,7 +54,7 @@ const ProjectsBox = () => {
       flexdir="row"
       flexwrap="wrap"
       align="center"
-      gap="3rem"
+      gap="4rem"
       width="95%"
       justify="space-around"
     >
