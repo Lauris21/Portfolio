@@ -3,6 +3,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 import { ThemeContext } from '../context/ThemeContext';
+import { mobile } from '../mediaStyled';
 import themeStyled from '../themeStyled';
 
 const ButtonStyled = styled.button`
@@ -12,7 +13,9 @@ const ButtonStyled = styled.button`
   margin: auto;
   font-size: 1.5rem;
   text-align: center;
-  padding: 0;
+  ${mobile} {
+    font-size: 1rem;
+  }
   ${(props) => {
     const { background, border } = props;
     return css`
