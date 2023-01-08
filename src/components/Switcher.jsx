@@ -6,8 +6,8 @@ import { ThemeContext } from '../context/ThemeContext';
 import themeStyled from '../themeStyled';
 
 const ButtonStyled = styled.button`
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 9px;
   margin: auto;
   font-size: 1.5rem;
