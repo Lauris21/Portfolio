@@ -12,6 +12,7 @@ const ButtonStyled = styled.button`
   margin: auto;
   font-size: 1.5rem;
   text-align: center;
+  padding: 0;
   ${(props) => {
     const { background, border } = props;
     return css`
