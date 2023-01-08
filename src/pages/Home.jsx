@@ -12,9 +12,9 @@ const Home = () => {
     <DivHome display="flex" flexdir="row" justify="center" margintop="2rem" minH="65vh">
       <Div margin="auto 0">
         <Div display="flex" flexdir="column" gap="1rem" padding="1.25rem">
-          <P fontSz="1.75rem">HELLO,</P>
+          <P fontSz="1.75rem">Hello 👋🏽,</P>
           <Div display="flex" flexdir="row" gap="1rem">
-            <P fontSz="1.75rem">I´M</P>
+            <P fontSz="1.75rem">I´m</P>
             <Bold fontSz="2.5rem">Laura Sánchez</Bold>
           </Div>
         </Div>
