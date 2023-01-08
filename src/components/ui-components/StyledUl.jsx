@@ -5,7 +5,7 @@ export const StyledUl = styled.ul`
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
-  min-width: 225px;
+  min-width: 200px;
   margin: auto;
   flex-wrap: wrap;
   gap: 1rem;
