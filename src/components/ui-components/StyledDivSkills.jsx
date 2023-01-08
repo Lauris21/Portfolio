@@ -16,7 +16,7 @@ const StyledDivSkills = styled.div`
   gap: 1rem;
   width: 7rem;
   ${mobile} {
-    width: 6rem;
+    width: 6.3rem;
   }
   ${(props) => {
     const {

@@ -9,6 +9,7 @@ import Bold from './ui-components/StyledBold';
 import Div from './ui-components/StyledDiv';
 import P from './ui-components/StyledPharagraph';
 import DivProject from './ui-components/StyledDivProject';
+import Title from './ui-components/StyledTitle';
 
 const ProjectsBox = () => {
   const { theme } = useContext(ThemeContext);
@@ -69,7 +70,7 @@ const ProjectsBox = () => {
             justify="space-between"
             gap="1.5rem"
           >
-            <Bold textAl="center">{project.name}</Bold>
+            <Title textAl="center">{project.name}</Title>
             <ReactPlayer url={project.url} playsinline width="100%" />
             <Div
               width="fit-content"

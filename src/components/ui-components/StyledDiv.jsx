@@ -30,6 +30,7 @@ const StyledDiv = styled.div`
       gap,
       minH,
       maxW,
+      minW,
     } = props;
     return css`
       background-color: ${backgr};
@@ -41,6 +42,7 @@ const StyledDiv = styled.div`
       object-fit: ${objectfit};
       width: ${width};
       max-width: ${maxW};
+      min-width: ${minW};
       height: ${height};
       justify-content: ${justify};
       border-radius: ${borderradius};

@@ -19,7 +19,14 @@ const About = () => {
   return (
     <Div display="flex" flexdir="column" align="center" margintop="2rem" minH="65vh">
       <Div width="10rem" height="4px" backgr={themeStyled.dark.tertiary}></Div>
-      <Div padding="2rem" display="flex" flexdir="column" gap="1rem" width="65%">
+      <Div
+        padding="2rem"
+        display="flex"
+        flexdir="column"
+        gap="1rem"
+        width="65%"
+        minW="300px"
+      >
         <P>I am 30 years old, I love sports, nature and new challenges.</P>
         <P>
           I have always been an administrator, but last year I achieved several goals,
@@ -31,7 +38,7 @@ const About = () => {
         </P>
       </Div>
       <Div width="10rem" height="4px" backgr={themeStyled.dark.tertiary}></Div>
-      <Div padding="2rem" width="90%" maxW="900px">
+      <Div padding="2rem" width="90%" maxW="900px" minW="350px">
         <P textAl="center" fontSz="2rem">
           My Skills
         </P>

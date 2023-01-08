@@ -3,11 +3,15 @@ import { useContext } from 'react';
 import styled, { css } from 'styled-components';
 
 import { ThemeContext } from '../../context/ThemeContext';
+import { mobileS } from '../../mediaStyled';
 import themeStyled from '../../themeStyled';
 
 const StyledDivForm = styled.div`
   box-sizing: border-box;
-
+  place-items: center;
+  ${mobileS} {
+    width: 275px;
+  }
   ${(props) => {
     const {
       backgr,

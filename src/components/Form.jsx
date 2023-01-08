@@ -38,7 +38,13 @@ const Form = () => {
           <Img src={mail} alt="mail icon" width="2.5rem" />
           <P>laurasanchez.develop@gmail.com</P>
         </DivForm>
-        <DivForm padding="2rem" display="flex" flexdir="column" gap="1rem">
+        <DivForm
+          padding="2rem"
+          display="flex"
+          flexdir="column"
+          gap="1rem"
+          justify="center"
+        >
           <Input
             type="text"
             name="user_name"
@@ -68,7 +74,7 @@ const Form = () => {
             required
           />
           <Input
-            width="7rem"
+            width="6rem"
             margin="0 auto"
             fontSz="1rem"
             padding="0.5rem"

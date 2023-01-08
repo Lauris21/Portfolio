@@ -3,34 +3,31 @@ import { useContext } from 'react';
 import styled, { css } from 'styled-components';
 
 import { ThemeContext } from '../../context/ThemeContext';
-import { mobile, mobileS } from '../../mediaStyled';
+import { mobileS } from '../../mediaStyled';
 import themeStyled from '../../themeStyled';
 
-export const StyledLi = styled.li`
-  list-style-type: none;
-  box-sizing: border-box;
-  ${mobile} {
-    font-size: 1rem;
-  }
+const StyledTitle = styled.p`
   ${mobileS} {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
-
   ${(props) => {
-    const { color } = props;
+    const { color, fontSz, textAl } = props;
     return css`
       color: ${color};
+      font-size: ${fontSz};
+      text-align: ${textAl};
     `;
   }}
 `;
 
-export const Li = (props) => {
+const Title = (props) => {
   const { theme } = useContext(ThemeContext);
-
   return (
-    <StyledLi
-      color={theme === 'dark' ? themeStyled.dark.primary : themeStyled.light.primary}
+    <StyledTitle
+      color={theme === 'dark' ? themeStyled.dark.secondary : themeStyled.light.secondary}
       {...props}
-    ></StyledLi>
+    ></StyledTitle>
   );
 };
+
+export default Title;
