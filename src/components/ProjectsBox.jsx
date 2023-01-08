@@ -65,7 +65,7 @@ const ProjectsBox = () => {
             display="flex"
             flexdir="column"
             width="400px"
-            height="500px"
+            height="550px"
             justify="space-between"
             gap="1.5rem"
           >
