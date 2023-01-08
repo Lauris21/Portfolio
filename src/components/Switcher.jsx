@@ -11,7 +11,7 @@ const ButtonStyled = styled.button`
   border-radius: 9px;
   margin: auto;
   font-size: 1.5rem;
-  text-align: start;
+  text-align: center;
   ${(props) => {
     const { background, border } = props;
     return css`
