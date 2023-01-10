@@ -25,10 +25,10 @@ const ProjectsBox = () => {
     },
     {
       url: 'https://youtu.be/t6efFwqDMNE',
-      name: 'Rick&MortisBlog',
+      name: 'Rick&MortyBlog',
       link: 'https://rick-and-mortis-blog.vercel.app/',
       description:
-        'Blog where you can add comments about the Rick&Mortis series and search for your favorite character.',
+        'Blog where you can add comments about the Rick & Morty series and search for your favorite character.',
       id: '2',
     },
     {
@@ -80,7 +80,7 @@ const ProjectsBox = () => {
               }
             >
               <a href={project.link} target="_blank" rel="noreferrer">
-                <P>👉 {project.link}</P>
+                <P>👉 See more </P>
               </a>
             </Div>
             <P>{project.description}</P>

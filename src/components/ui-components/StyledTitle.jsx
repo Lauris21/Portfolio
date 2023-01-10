@@ -11,11 +11,12 @@ const StyledTitle = styled.p`
     font-size: 1.5rem;
   }
   ${(props) => {
-    const { color, fontSz, textAl } = props;
+    const { color, fontSz, textAl, backgr } = props;
     return css`
       color: ${color};
       font-size: ${fontSz};
       text-align: ${textAl};
+      background: ${backgr};
     `;
   }}
 `;
@@ -25,6 +26,11 @@ const Title = (props) => {
   return (
     <StyledTitle
       color={theme === 'dark' ? themeStyled.dark.secondary : themeStyled.light.secondary}
+      backgr={
+        theme === 'dark'
+          ? themeStyled.dark.background
+          : themeStyled.light.backgroundSecond
+      }
       {...props}
     ></StyledTitle>
   );
