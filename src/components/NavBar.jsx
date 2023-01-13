@@ -1,6 +1,5 @@
 import React from 'react';
 import { useContext } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import LogoLS from '../../public/logoLauraSanchez.png';
 import { ThemeContext } from '../context/ThemeContext';
@@ -8,6 +7,7 @@ import themeStyled from '../themeStyled';
 import Switcher from './Switcher';
 import { Img } from './ui-components/StyledImg';
 import { Li } from './ui-components/StyledLi';
+import { NavLink } from './ui-components/StyledLink';
 import { Nav } from './ui-components/StyledNav';
 import { Ul } from './ui-components/StyledUl';
 
@@ -31,7 +31,9 @@ const NavBar = () => {
 
       <Ul>
         <Li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" activeStyle={{ color: themeStyled.dark.tertiary }}>
+            Home
+          </NavLink>
         </Li>
         <Li>
           <NavLink to="/about">About</NavLink>

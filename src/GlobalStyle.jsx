@@ -171,6 +171,10 @@ a:active, a:focus {
   color: #ffdc2b;
   border-bottom: 1px solid #ffdc2b;
 }
+
+a:hover {
+  transform: scale(1.1);
+}
 `;
 
 export default GlobalStyle;

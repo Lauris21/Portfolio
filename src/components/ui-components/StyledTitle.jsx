@@ -11,12 +11,13 @@ const StyledTitle = styled.p`
     font-size: 1.5rem;
   }
   ${(props) => {
-    const { color, fontSz, textAl, backgr } = props;
+    const { color, fontSz, textAl, backgr, height } = props;
     return css`
       color: ${color};
       font-size: ${fontSz};
       text-align: ${textAl};
       background: ${backgr};
+      height: ${height};
     `;
   }}
 `;

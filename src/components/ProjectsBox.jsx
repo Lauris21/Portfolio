@@ -1,14 +1,13 @@
 import React from 'react';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import ReactPlayer from 'react-player';
 import { HashLoader } from 'react-spinners/HashLoader';
 
 import { ThemeContext } from '../context/ThemeContext';
 import themeStyled from '../themeStyled';
-import Bold from './ui-components/StyledBold';
 import Div from './ui-components/StyledDiv';
-import P from './ui-components/StyledPharagraph';
 import DivProject from './ui-components/StyledDivProject';
+import P from './ui-components/StyledPharagraph';
 import Title from './ui-components/StyledTitle';
 
 const ProjectsBox = () => {
@@ -66,12 +65,11 @@ const ProjectsBox = () => {
             display="flex"
             flexdir="column"
             width="400px"
-            height="550px"
-            justify="space-between"
+            height="540px"
             gap="1.5rem"
           >
             <Title textAl="center">{project.name}</Title>
-            <ReactPlayer url={project.url} playsinline width="100%" />
+            <ReactPlayer url={project.url} playsinline width="100%" height="330px" />
             <Div
               width="fit-content"
               borderbottom={`1px solid ${themeStyled.dark.tertiary}`}
@@ -80,7 +78,7 @@ const ProjectsBox = () => {
               }
             >
               <a href={project.link} target="_blank" rel="noreferrer">
-                <P>👉 See more </P>
+                <P hover="transform: scale(1.1)">👉 See more </P>
               </a>
             </Div>
             <P>{project.description}</P>
