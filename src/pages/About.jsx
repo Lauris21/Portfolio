@@ -9,15 +9,24 @@ import mongoDB from '../../public/mongo-svgrepo-com.svg';
 import nodeJS from '../../public/nodejs-1-logo-svgrepo-com.svg';
 import react from '../../public/react-svgrepo-com.svg';
 import styledComponents from '../../public/styledComponents.png';
+import typescript from '../../public/typescript-official-svgrepo-com.svg';
 import Div from '../components/ui-components/StyledDiv';
 import DivSkills from '../components/ui-components/StyledDivSkills';
 import { Img } from '../components/ui-components/StyledImg';
 import P from '../components/ui-components/StyledPharagraph';
 import themeStyled from '../themeStyled';
+import tailwind from '../../public/Tailwind_CSS_Logo.svg.png';
 
 const About = () => {
   return (
-    <Div display="flex" flexdir="column" align="center" margintop="2rem" minH="65vh">
+    <Div
+      display="flex"
+      flexdir="column"
+      align="center"
+      margintop="2rem"
+      minH="65vh"
+      gap="2rem"
+    >
       <Div width="10rem" height="4px" backgr={themeStyled.dark.tertiary}></Div>
       <Div
         padding="2rem"
@@ -63,6 +72,10 @@ const About = () => {
             <P>JavaScript</P>
           </DivSkills>
           <DivSkills>
+            <Img src={typescript} alt="icon TS" width="4rem" />
+            <P>TypeScript</P>
+          </DivSkills>
+          <DivSkills>
             <Img src={react} alt="icon React" width="4rem" />
             <P>React</P>
           </DivSkills>
@@ -77,6 +90,10 @@ const About = () => {
           <DivSkills>
             <Img src={styledComponents} alt="icon styledComponents" width="4rem" />
             <P textAl="center">Styled-Components</P>
+          </DivSkills>
+          <DivSkills>
+            <Img src={tailwind} alt="icon chakra" width="5.5rem" height="4rem" />
+            <P>Tailwind</P>
           </DivSkills>
           <DivSkills>
             <Img src={chakra} alt="icon chakra" width="5.5rem" height="4rem" />

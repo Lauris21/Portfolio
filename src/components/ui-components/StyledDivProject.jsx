@@ -32,6 +32,8 @@ const StyledDivProject = styled.div`
       borderbottom,
       gap,
       minH,
+      maxW,
+      minW,
     } = props;
     return css`
       background-color: ${backgr};
@@ -42,6 +44,8 @@ const StyledDivProject = styled.div`
       flex-direction: ${flexdir};
       object-fit: ${objectfit};
       width: ${width};
+      max-width: ${maxW};
+      min-width: ${minW};
       height: ${height};
       justify-content: ${justify};
       border-radius: ${borderradius};

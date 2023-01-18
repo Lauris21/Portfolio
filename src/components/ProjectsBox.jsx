@@ -64,7 +64,8 @@ const ProjectsBox = () => {
             key={project.id}
             display="flex"
             flexdir="column"
-            width="400px"
+            minW="400px"
+            maxW="600px"
             height="540px"
             gap="1.5rem"
           >
