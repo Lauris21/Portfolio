@@ -1,6 +1,9 @@
+import 'react-toastify/dist/ReactToastify.css';
+
 import emailjs from '@emailjs/browser';
 import React from 'react';
 import { useRef } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 
 import mail from '../../public/mail-svgrepo-com (1).svg';
 import { Img } from '../components/ui-components/StyledImg';
@@ -22,9 +25,29 @@ const Form = () => {
       .then(
         (res) => {
           console.log(res);
+          toast.success('The task is empty!', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+          });
         },
         (error) => {
           console.log('FAILED', error);
+          toast.error('The task is empty!', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+          });
         },
       );
     ev.target.reset();
@@ -86,6 +109,7 @@ const Form = () => {
           />
         </DivForm>
       </Fieldset>
+      <ToastContainer />
     </form>
   );
 };
