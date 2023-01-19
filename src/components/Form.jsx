@@ -25,7 +25,7 @@ const Form = () => {
       .then(
         (res) => {
           console.log(res);
-          toast.success('The task is empty!', {
+          toast.success('The mail has been sent!', {
             position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,
@@ -38,7 +38,7 @@ const Form = () => {
         },
         (error) => {
           console.log('FAILED', error);
-          toast.error('The task is empty!', {
+          toast.error('The mail has not been sent!', {
             position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,
