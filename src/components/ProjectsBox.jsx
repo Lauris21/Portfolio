@@ -15,12 +15,28 @@ const ProjectsBox = () => {
 
   const projects = [
     {
+      url: 'https://youtube.com/shorts/3LsCcOwGLNU',
+      name: 'Weather-App',
+      link: 'https://weather-two-mu.vercel.app/',
+      description:
+        'Weather forecast web for desktop and mobile, which takes data from the OpenWather API according to the location where you are, or where you are looking, and shows the forecast for the next few hours and days.',
+      id: '1',
+    },
+    {
+      url: 'https://youtu.be/cKBF0z3FFkQ',
+      name: 'Todo List',
+      link: 'https://to-do-list-six-rho.vercel.app/',
+      description:
+        'Todo List web for desktop and mobile, where you can down tasks, reminders and everything you can think of. Once completed, don`t forget to delete it.',
+      id: '2',
+    },
+    {
       url: 'https://youtu.be/SoGkInynO04',
       name: 'The Phone Free',
       link: 'https://the-phone-free.vercel.app/',
       description:
         'Web for desktop and mobile. It includes a catalog of mobile phones, where you can add the phones you want to the cart.',
-      id: '1',
+      id: '3',
     },
     {
       url: 'https://youtu.be/t6efFwqDMNE',
@@ -28,7 +44,7 @@ const ProjectsBox = () => {
       link: 'https://rick-and-mortis-blog.vercel.app/',
       description:
         'Blog where you can add comments about the Rick & Morty series and search for your favorite character.',
-      id: '2',
+      id: '4',
     },
     {
       url: 'https://youtu.be/4f19SyiHR2A',
@@ -36,7 +52,7 @@ const ProjectsBox = () => {
       link: 'https://tim-burton-app.vercel.app/',
       description:
         'Api-Blog where to search for Tim Burton movies, if you don`t find the movie you are looking for, you can add it so that other people can find it in the future.',
-      id: '3',
+      id: '5',
     },
     {
       url: 'https://youtu.be/rVu876vJCCA',
@@ -44,7 +60,7 @@ const ProjectsBox = () => {
       link: 'https://hub-app-sigma.vercel.app/',
       description:
         'Application made with native JavaScript. It has several mini games that you can play.',
-      id: '4',
+      id: '6',
     },
   ];
 
