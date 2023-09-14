@@ -16,9 +16,9 @@ animation: ${wave} 5s linear infinite;
 `
 
 
-const Span = () => {
+const Span = ({children}) => {
   return (
-    <StyledSpan></StyledSpan>
+    <StyledSpan>{children}</StyledSpan>
   )
 }
 
