@@ -167,14 +167,11 @@ const GlobalStyle = createGlobalStyle`
     text-decoration:none;
 }
 
-a:active, a:focus {
-  color: #ffdc2b;
+.active {
   border-bottom: 1px solid #ffdc2b;
-}
-
-a:hover {
   transform: scale(1.1);
 }
+
 `;
 
 export default GlobalStyle;

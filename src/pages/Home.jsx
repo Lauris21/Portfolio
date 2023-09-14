@@ -9,6 +9,7 @@ import P from '../components/ui-components/StyledPharagraph';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+import Span from '../components/ui-components/StyledSpan';
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
       <DivHome display="flex" flexdir="row" justify="center" margintop="2rem" minH="65vh">
         <Div margin="auto 0">
           <Div display="flex" flexdir="column" gap="1rem" padding="1.25rem">
-            <P fontSz="1.75rem">Hello 👋🏽,</P>
+            <P fontSz="1.75rem">Hello <Span>👋🏽</Span>,</P>
             <Div display="flex" flexdir="row" gap="1rem">
               <P fontSz="1.75rem">I´m</P>
               <Bold fontSz="2.5rem">Laura Sánchez</Bold>
