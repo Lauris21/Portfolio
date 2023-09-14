@@ -16,6 +16,7 @@ import { Img } from '../components/ui-components/StyledImg';
 import P from '../components/ui-components/StyledPharagraph';
 import themeStyled from '../themeStyled';
 import tailwind from '../../public/Tailwind_CSS_Logo.svg.png';
+import socket from '../../public/socket.png';
 
 const About = () => {
   return (
@@ -37,14 +38,7 @@ const About = () => {
         minW="300px"
       >
         <P>I am 30 years old, I love sports, nature and new challenges.</P>
-        <P>
-          I have always been an administrator, but last year I achieved several goals,
-          including learning and doing a web development bootcamp.
-        </P>
-        <P>
-          I decided to make this change in my life because I have always liked technology,
-          and in my last job I performed tasks related to the computer system and KPIs.
-        </P>
+        <P>I am a web development teacher at Neoland. I also work as a freelancer, if you are interested contact me.</P>
       </Div>
       <Div width="10rem" height="4px" backgr={themeStyled.dark.tertiary}></Div>
       <Div padding="2rem" width="90%" maxW="900px" minW="350px">
@@ -86,6 +80,10 @@ const About = () => {
           <DivSkills>
             <Img src={mongoDB} alt="icon mongoDB" width="4rem" />
             <P>MongoDB</P>
+          </DivSkills>
+          <DivSkills>
+            <Img src={socket} alt="icon socket.io" width="4rem" />
+            <P>Socket.io</P>
           </DivSkills>
           <DivSkills>
             <Img src={styledComponents} alt="icon styledComponents" width="4rem" />
